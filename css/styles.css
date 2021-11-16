@@ -14,6 +14,7 @@
 
  body {
      font-family: 'Red Hat Display', sans-serif;
+     font-size: 16px;
      background-color: var(--pale-blue);
  }
 
@@ -23,4 +24,88 @@
     background-size: contain;
     width: 100vw;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .card {
+     width: 380px;
+     height: 550px;
+     background-color: #ffffff;
+     border-radius: 25px;
+     overflow: hidden;
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .card__hero img{
+     width: 100%;
+ }
+
+ .card__information {
+     width: 75%;
+     margin-top: 30px;
+ }
+
+ .card__information h2 {
+     font-weight: 900;
+     color: var(--dark-blue);
+     text-align: center;
+ }
+
+ .card__information p {
+     font-weight: 500;
+     font-size: 14px;
+     color: var(--desatured-blue);
+     text-align: center;
+     margin: 20px 0;
+     line-height: 20px;
+ }
+
+ .card__plan {
+     background-color: var(--very-pale-blue);
+     width: 80%;
+     padding: 15px;
+     border-radius: 10px;
+
+     display: flex;
+     align-items: center;
+ }
+
+ .card__plan img {
+     width: 40px;
+ }
+
+ .card__plan--info {
+     margin-left: 15px;
+ }
+
+ .card__plan--info h3 {
+     color: var(--dark-blue);
+     font-size: 14px;
+     font-weight: 900;
+     margin-bottom: 4px;
+ }
+
+ .card__plan--info p {
+     color: var(--desatured-blue);
+     font-size: 14px;
+     font-weight: 500;
+ }
+
+ .card__plan a {
+     margin-left: auto;
+     font-size: 12px;
+     font-weight: 700;
+     color: var(--bright-blue);
+ }
+
+ .btn-pay {
+     width: 80%;
+     margin-top: 25px;
+     padding: 12px;
  }
