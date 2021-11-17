@@ -62,7 +62,7 @@
      font-size: 14px;
      color: var(--desatured-blue);
      text-align: center;
-     margin: 20px 0;
+     margin: 15px 0;
      line-height: 20px;
  }
 
@@ -104,8 +104,62 @@
      color: var(--bright-blue);
  }
 
+ .card__plan a:hover {
+     cursor: pointer;
+     text-decoration: none;
+     opacity: .7;
+ }
+
  .btn-pay {
      width: 80%;
      margin-top: 25px;
      padding: 12px;
+     border-radius: 10px;
+     border: none;
+     background-color: var(--bright-blue);
+ }
+
+ .btn-pay:hover {
+     cursor: pointer;
+     opacity: .7;
+ }
+
+ .btn-pay span {
+     color: #ffffff;
+     font-weight: 900;
+ }
+
+ .btn-cancel {
+     margin-top: 20px;
+     font-size: 12px;
+     font-weight: 900;
+     color: var(--desatured-blue);
+     text-decoration: none;
+ }
+
+ .btn-cancel:hover {
+     cursor: pointer;
+     color: var(--dark-blue);
+ }
+
+ @media screen and (max-width: 375px) {
+     .container {
+         background-image: url("../img/pattern-background-mobile.svg");
+     }
+     .card {
+         width: 320px;
+         height: 520px;
+     }
+     .card__information h2 {
+         font-size: 20px;
+     }
+     .card__information p {
+         line-height: 25px;
+     }
+     .btn-pay {
+         padding: 14px;
+     }
+     .btn-cancel {
+         font-size: 14px;
+     }
  }
